@@ -1,9 +1,10 @@
 # タスク管理アプリ（学習用）
 
-Java + Spring Boot で作るタスク管理アプリ。
+Java + Spring Bootで作るタスク管理アプリ。
 
 ## フォルダ構成
-```
+
+```text
 task_management_sample/
 ├── README.md
 ├── app/                  # Spring Boot アプリ本体（1週目に Spring Initializr で生成）
