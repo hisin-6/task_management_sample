@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: taskmanagement
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskdb
+    username: taskuser
+    password: taskpass
+  jpa:
+    hibernate:
+      # テーブルはFlywayで作るので、JPAには作らせずに検証だけさせる
+      ddl-auto: validate
+    open-in-view: false

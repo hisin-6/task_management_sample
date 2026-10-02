@@ -14,9 +14,9 @@
 | 分類 | 技術 |
 | --- | --- |
 | 言語 | Java 21 |
-| フレームワーク | Spring Boot 3 / Spring Data JPA / Spring Security |
+| フレームワーク | Spring Boot 4 / Spring Data JPA / Spring Security |
 | 画面 | Thymeleaf（＋Bootstrap） |
-| DB | H2（開発初期）→ PostgreSQL |
+| DB | PostgreSQL（Docker compose）／ マイグレーションはFlyway |
 | ビルド | Gradle |
 | テスト | JUnit 5 / Mockito / MockMvc |
 | 管理 | Git / GitHub |
