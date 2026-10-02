@@ -25,19 +25,19 @@
 
 ## 1週目（10/1〜10/9）：設計 & 環境構築
 
-- [ ] 要件定義（`docs/requirements.md` を埋める）
-- [ ] 画面一覧・画面遷移図（`docs/design/`）
-- [ ] テーブル設計・ER図（`docs/design/`）
-- [ ] 開発環境構築（JDK / IDE / Spring Initializrでプロジェクト作成 → `app/`）
-- [ ] GitHubリポジトリ作成
-- [ ] Hello World画面を表示する
+- [x] 要件定義（`docs/requirements.md` を埋める）
+- [x] 画面一覧・画面遷移図（`docs/design/`）
+- [x] テーブル設計・ER図（`docs/design/`）
+- [x] 開発環境構築（JDK / IDE / Spring Initializrでプロジェクト作成 → `app/`）
+- [x] GitHubリポジトリ作成
+- [x] Hello World画面を表示する
 
 ## 2週目（10/12〜10/16）：基本 CRUD
 
 - [ ] Entity / Repository / Service / Controller の層構造を理解
 - [ ] タスク一覧・詳細・登録・編集・削除（削除は論理削除）
 - [ ] 入力チェック（Bean Validation）
-- [ ] H2からPostgreSQLへ切り替え
+- [ ] Flywayでテーブルを作成（`docs/design/database.md` のとおり）
 
 ## 3週目（10/19〜10/23）：機能拡張
 
