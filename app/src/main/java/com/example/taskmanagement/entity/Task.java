@@ -74,4 +74,11 @@ public class Task {
     @UpdateTimestamp
     @Column(nullable = false)
     private LocalDateTime updatedAt;
+
+    // 期限を過ぎていて、まだ完了していないタスクかどうか
+    public boolean isOverdue() {
+        return dueDate != null
+                && dueDate.isBefore(LocalDate.now())
+                && status != TaskStatus.DONE;
+    }
 }

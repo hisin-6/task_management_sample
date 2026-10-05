@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="~{fragments/layout :: head('タスク一覧')}"></th:block>
+</head>
+<body>
+    <nav th:replace="~{fragments/layout :: header}"></nav>
+
+    <main class="container">
+        <h1 class="h3 mb-3">タスク一覧</h1>
+
+        <p th:if="${tasks.isEmpty()}" class="text-muted">タスクはまだありません。</p>
+
+        <table th:unless="${tasks.isEmpty()}" class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>タイトル</th>
+                    <th>ステータス</th>
+                    <th>優先度</th>
+                    <th>期限</th>
+                    <th>カテゴリ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 期限切れで未完了のタスクは行を赤くする -->
+                <tr th:each="task : ${tasks}" th:classappend="${task.overdue} ? 'table-danger'">
+                    <td th:text="${task.title}">タイトル</td>
+                    <td th:text="${task.status.label}">未着手</td>
+                    <td th:text="${task.priority.label}">中</td>
+                    <td th:text="${task.dueDate != null} ? ${#temporals.format(task.dueDate, 'yyyy/MM/dd')} : '-'">2026/10/01</td>
+                    <td th:text="${task.category != null} ? ${task.category.name} : '未分類'">カテゴリ</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
