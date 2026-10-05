@@ -37,7 +37,7 @@
 - [ ] Entity / Repository / Service / Controller の層構造を理解
 - [ ] タスク一覧・詳細・登録・編集・削除（削除は論理削除）
 - [ ] 入力チェック（Bean Validation）
-- [ ] Flywayでテーブルを作成（`docs/design/database.md` のとおり）
+- [x] Flywayでテーブルを作成（`docs/design/database.md` のとおり）
 
 ## 3週目（10/19〜10/23）：機能拡張
 
